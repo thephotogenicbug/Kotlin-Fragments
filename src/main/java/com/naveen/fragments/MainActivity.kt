@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
 
             secondFragmentTransaction.replace(R.id.frame, secondFragment)
 
+            secondFragmentTransaction.addToBackStack(null)
+
             secondFragmentTransaction.commit()
         }
 
